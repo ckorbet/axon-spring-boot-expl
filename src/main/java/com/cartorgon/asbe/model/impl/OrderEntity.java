@@ -1,4 +1,4 @@
-package com.cartorgon.asbe.mode.impl;
+package com.cartorgon.asbe.model.impl;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

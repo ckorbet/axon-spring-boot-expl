@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AxonSprinbBootExplApplication {
+public class AxonSpringBootExplApplication {
 	public static final void main(final String[] args) {
-		SpringApplication.run(AxonSprinbBootExplApplication.class, args);
+		SpringApplication.run(AxonSpringBootExplApplication.class, args);
 	}
 }

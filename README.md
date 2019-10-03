@@ -1,7 +1,9 @@
 # axon-spring-boot-expl
 
 ## Intro
-Demo project for [Axon Fwk](http://axoniq.io) with Spring Boot 
+Demo project for [Axon Fwk](http://axoniq.io) with Spring Boot
+
+_(**Note**: please bear in mind that the structure of this project may vary from the proposed one in the official [Axoniq.io website](https://docs.axoniq.io/reference-guide/quick-start))_ 
 
 ## Fwks., Tools and Versions
 - Java 1.8 _(Not 11 due to [kotlin-stdlib-jdk8](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.50))_
