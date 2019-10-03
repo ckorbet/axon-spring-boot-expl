@@ -5,7 +5,7 @@ server:
  
 info:
  application:
-  name: datarest-spring-boot-expl
+  name: axon-spring-boot-expl
   description: Spring Data Rest demo project
   type: Spring Boot 2 Data Rest MicroService
   version: 0.0.1-SNAPSHOT
@@ -41,9 +41,9 @@ management:
 
 spring:
  application:
-  name: datarest-spring-boot-expl  
+  name: axon-spring-boot-expl  
  jmx:
-  default-domain: datarest.spring.boot.expl 
+  default-domain: axon.spring.boot.expl 
  
  datasource:
   url: jdbc:h2:mem:testdb

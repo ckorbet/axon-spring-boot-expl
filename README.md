@@ -1,24 +1,22 @@
-# datarest-spring-boot-expl
+# axon-spring-boot-expl
 
 ## Intro
-Spring Data Rest demo project, to _play_ with [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc2=h_ql_prod_cp_ebs). 
+Demo project for [Axon Fwk](http://axoniq.io) with Spring Boot 
 
 ## Fwks., Tools and Versions
-- Java 1.8 _(Not 11 due to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc2=h_ql_prod_cp_ebs) compatibility)_
-- Spring Boot 2.1.8.RELEASE _(Actuator + Web + DevTools + Data JPA + Data Rest + H2)_
+- Java 1.8 _(Not 11 due to [kotlin-stdlib-jdk8](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.50))_
+- Spring Boot 2.1.8.RELEASE _(Actuator + Web + DevTools + Data JPA + Data Rest + H2 + Axon starter)_
+- [Kotlin](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.50) 1.3.50
+- [Jackson Kotlin](https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-kotlin/2.10.0) 2.10.0
 - [Lombok](https://projectlombok.org/) 1.18.1
 - [AssertJ](https://joel-costigliola.github.io/assertj/) 3.13.2
 - [Pragmatists/JUnitParams](https://github.com/Pragmatists/JUnitParams) 1.1.1
 
 ## References
-- [Introduction to Spring Data Rest _(by Baeldung)_](https://www.baeldung.com/spring-data-rest-intro)
-- [Using .ebextensions to extend nginx default configuration in AWS Elastic Beanstalk _(by medium)_](https://medium.com/swlh/using-ebextensions-to-extend-nginx-default-configuration-in-aws-elastic-beanstalk-189b844ab6ad)
-- [Getting to Know and Love AWS Elastic Beanstalk Configuration Files (.ebextensions) _(by medium)_](https://medium.com/@marilu597/getting-to-know-and-love-aws-elastic-beanstalk-configuration-files-ebextensions-9a4502a26e3c)
-- [How to configure AWS Beanstalk NGINX requests to redirect http to https _(by pushcommit.com)_](https://www.pushcommit.com/configure-aws-beanstalk-nginx-requests-to-redirect-http-to-https/)
-- [Configuring the Proxy Server _(by docs.aws.amazon.com)_](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-platform-proxy.html)
-- [Cinfiguring the Reverse Proxy _(by docs.aws.amazon.com)_](https://docs.amazonaws.cn/en_us/elasticbeanstalk/latest/dg/go-nginx.html)
+- [A Guide to the Axon Framework _(by baeldung)_](https://www.baeldung.com/axon-cqrs-event-sourcing)
+- [Axon reference guide _(by axoniq.io)_](https://docs.axoniq.io/reference-guide/)
+- [Axon youtube channel _(by axoniq.io)_](https://www.youtube.com/channel/UCQb0g7zJCWrzkpxznSUkERw/videos)
+- [GOTO 2019 • CQRS & Event Sourcing Apps with Axon & Pivotal Cloud Foundry • S. v. Beelen & B. Wilcock _(youtube)_](https://www.youtube.com/watch?v=moRDmcl5_WY)
 
-## Steps
-- Build the distributable app with Maven _(.jar by default - .war if we want to have an specific nginx configu. file for AWS)_
-- Deploy the distribution following the appropriate AWS Elastic Beanstalk instructions _(this will create an AWS EC2 with some default config)_
-- Modify the `Security Groups\Inbound` assigned to the EC2 by adding the port exposed by the application  
+## Local Dev. platform
+- [Axon Server Docker container](https://hub.docker.com/r/axoniq/axonserver/) _(accessible at http://localhost:8024)_
