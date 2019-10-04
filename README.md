@@ -20,6 +20,8 @@ _(**Note**: please bear in mind that the structure of this project may vary from
 - [Axon youtube channel _(by axoniq.io)_](https://www.youtube.com/channel/UCQb0g7zJCWrzkpxznSUkERw/videos)
 - [GOTO 2019 • CQRS & Event Sourcing Apps with Axon & Pivotal Cloud Foundry • S. v. Beelen & B. Wilcock _(youtube)_](https://www.youtube.com/watch?v=moRDmcl5_WY)
 - [Axon - CQRS with Spring Boot by examples](https://sgitario.github.io/axon-by-example/)
+- [Implementing Event Sourcing Using Axon and Spring Boot - Part 1 _(by dzone)_](https://dzone.com/articles/implementing-event-sourcing-using-axon-and-spring)
+- [Implementing Event Sourcing with Axon and Spring Boot – Part 2 _(by progressivecoder)_](http://progressivecoder.com/implementing-event-sourcing-with-axon-and-spring-boot-part-2/)
 
 ## Local Dev. platform
 - [Axon Server Docker container](https://hub.docker.com/r/axoniq/axonserver/) _(accessible at http://localhost:8024)_
