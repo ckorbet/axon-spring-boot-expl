@@ -3,7 +3,7 @@ package com.cartorgon.asbe.axon.cqrs.commands;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 import com.cartorgon.asbe.axon.AxonOrderComponent;
-import com.cartorgon.asbe.model.impl.OrderEntity;
+import com.cartorgon.asbe.model.impl.OrderDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data @AllArgsConstructor @NoArgsConstructor
 public class OrderUpdateCommand implements AxonOrderComponent {
 	
-	private OrderEntity order;
+	private OrderDto order;
 
 	@Override
 	@TargetAggregateIdentifier

@@ -2,9 +2,9 @@ package com.cartorgon.asbe.service;
 
 import java.util.List;
 
-import com.cartorgon.asbe.model.impl.OrderEntity;
+import com.cartorgon.asbe.model.impl.OrderDto;
 
 public interface OrderService {
-	List<OrderEntity> getOrders();
-	OrderEntity updateOrder(OrderEntity order);
+	List<OrderDto> getOrders();
+	OrderDto updateOrder(OrderDto order);
 }

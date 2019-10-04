@@ -1,7 +1,7 @@
 package com.cartorgon.asbe.axon.cqrs.eventsourcing.events;
 
 import com.cartorgon.asbe.axon.AxonOrderComponent;
-import com.cartorgon.asbe.model.impl.OrderEntity;
+import com.cartorgon.asbe.model.impl.OrderDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data @AllArgsConstructor @NoArgsConstructor
 public class OrderUpdatedEvent implements AxonOrderComponent {
 	
-	private OrderEntity order;
+	private OrderDto order;
 
 	@Override
 	public final long orderId() {

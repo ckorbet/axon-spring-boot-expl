@@ -23,4 +23,15 @@ public class OrderEntity implements Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 	private String product;
+	
+	/**
+	 * <p>
+	 * Given an {@link OrderDto}, return its corresponding Entity
+	 * </p>
+	 * @param order
+	 * @return
+	 */
+	public static final OrderEntity fromDtoToEntity(final OrderDto order) {
+		return new OrderEntity(order.getId(), order.getProduct());
+	}
 }

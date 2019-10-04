@@ -9,7 +9,7 @@ import org.axonframework.spring.stereotype.Aggregate;
 import com.cartorgon.asbe.axon.AxonOrderComponent;
 import com.cartorgon.asbe.axon.cqrs.commands.OrderUpdateCommand;
 import com.cartorgon.asbe.axon.cqrs.eventsourcing.events.OrderUpdatedEvent;
-import com.cartorgon.asbe.model.impl.OrderEntity;
+import com.cartorgon.asbe.model.impl.OrderDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,12 +21,12 @@ import lombok.extern.slf4j.Slf4j;
 @Data @AllArgsConstructor @NoArgsConstructor
 public class OrderAggregate implements AxonOrderComponent {
 
-	private OrderEntity order;
+	private OrderDto order;
 
 	@Override
 	@TargetAggregateIdentifier
 	public final long orderId() {
-		return this.order== null ? 0 : this.order.getId();
+		return this.order == null ? 0 : this.order.getId();
 	}
 
 	@Override

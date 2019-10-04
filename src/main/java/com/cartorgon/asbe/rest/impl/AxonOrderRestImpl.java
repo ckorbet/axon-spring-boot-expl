@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cartorgon.asbe.model.impl.OrderEntity;
+import com.cartorgon.asbe.model.impl.OrderDto;
 import com.cartorgon.asbe.rest.AxonOrderRest;
 import com.cartorgon.asbe.service.OrderService;
 
@@ -28,23 +28,22 @@ public class AxonOrderRestImpl implements AxonOrderRest {
 
 	@Override
 	@GetMapping(path = "/getorders", produces = MediaType.APPLICATION_JSON_VALUE)
-	public final ResponseEntity<List<OrderEntity>> getOrders() {
+	public final ResponseEntity<List<OrderDto>> getOrders() {
 		log.info("Received request to 'getOrders()'...");
-		final List<OrderEntity> resList = this.service.getOrders();
+		final List<OrderDto> resList = this.service.getOrders();
 		log.info("Serving response");
 		return new ResponseEntity<>(resList, HttpStatus.OK);
 	}
 
 	@Override
 	@PostMapping(path = "/updateorder", produces = MediaType.APPLICATION_JSON_VALUE)
-	public final ResponseEntity<OrderEntity> updateOrder(@RequestBody @NotNull final OrderEntity order) {
+	public final ResponseEntity<OrderDto> updateOrder(@RequestBody @NotNull final OrderDto order) {
 		if(order.getId() == 0l) {
 			throw new IllegalArgumentException("The Id of order to be updated cannot be null, blank, or empty");
 		}
 		log.info("Received request to 'updateOrder()'...");
-		final OrderEntity resOrder = this.service.updateOrder(order); 
+		final OrderDto resOrder = this.service.updateOrder(order); 
 		log.info("Serving response");
 		return new ResponseEntity<>(resOrder, HttpStatus.OK);
 	}
-
 }
